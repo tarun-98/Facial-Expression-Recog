@@ -1,0 +1,56 @@
+------------------- [train][201101_151958]Options --------------------
+         backend_pretrain: False                         
+               batch_size: 4                             	[default: 32]
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts\CKPlus\res_baseline\fold_0\201101_151958	[default: ./ckpts]
+              cls_backend: inception                     
+                   cls_nc: 7                             
+                 cls_norm: batch                         
+                  cls_pkl: emotion_labels.pkl            
+                data_root: datasets/CKPlus               	[default: None]
+              epoch_count: 1                             
+               final_size: 299                           
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 1                             	[default: 3]
+                 imgs_dir: imgs                          
+             imgs_res_dir: imgs_res                      
+                init_gain: 0.02                          
+                init_type: xavier                        
+               lambda_cls: 1.0                           
+           lambda_resface: 0.1                           
+               load_epoch: 0                             
+           load_model_dir: ./checkpoints                 
+                load_size: 320                           
+                 log_file: losses.log                    
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1604204399                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: train                         
+                    model: res_baseline                  	[default: res_cls]
+                n_threads: 12                            
+                     name: 201101_151958                 
+                    niter: 150                           	[default: 200]
+              niter_decay: 150                           	[default: 100]
+                     norm: instance                      
+             optim_policy: adam                          
+        print_losses_freq: 4                             
+                   res_lr: 1e-05                         
+             res_n_blocks: 4                             
+                 res_norm: batch                         
+          res_use_dropout: False                         
+          sample_img_freq: 5                             
+          save_epoch_freq: 200                           
+           serial_batches: False                         
+                   solver: resface                       	[default: res_cls]
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids_0.csv               	[default: train_ids.csv]
+          use_cls_dropout: False                         
+         use_data_augment: True                          	[default: False]
+        visdom_display_id: 1                             
+               visdom_env: res_baseline_ckp_0            	[default: main]
+              visdom_port: 8097                          
+--------------------- [train][201101_151958]End ----------------------
+
+
