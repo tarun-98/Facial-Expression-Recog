@@ -90,6 +90,7 @@ class ResClsModel(BaseModel):
 
     def save_ckpt(self, epoch):
         # save the specific networks
+        print("Hi")
         save_models_name = ['cls', 'resface', 'fusion']
         return super(ResClsModel, self).save_ckpt(epoch, save_models_name)
 

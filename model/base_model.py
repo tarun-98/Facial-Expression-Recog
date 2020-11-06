@@ -91,9 +91,14 @@ class BaseModel:
     def save_ckpt(self, epoch, models_name):
         for name in models_name:
             if isinstance(name, str):
+                print("Model name : {}".format(name))
+                print("Epoch : {}".format(epoch))
+                print("Directory : ".format(self.opt.ckpt_dir))
                 save_filename = '%s_net_%s.pth' % (epoch, name)
                 save_path = os.path.join(self.opt.ckpt_dir, save_filename)
+                print("saved path {}".format(save_path))
                 net = getattr(self, 'net_' + name)
+                #print(net)
                 # save cpu params, so that it can be used in other GPU settings
                 if len(self.gpu_ids) > 0 and torch.cuda.is_available():
                     torch.save(net.module.cpu().state_dict(), save_path)
@@ -103,8 +108,7 @@ class BaseModel:
                     torch.save(net.cpu().state_dict(), save_path)
 
     def load_ckpt(self, epoch, models_name):
-        # print(models_name)
-        models_name=["resface"]
+        print(models_name)
         for name in models_name:
             if isinstance(name, str):
                 load_filename = '%s_net_%s.pth' % (epoch, name)

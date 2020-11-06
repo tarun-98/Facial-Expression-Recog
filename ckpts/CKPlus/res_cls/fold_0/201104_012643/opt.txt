@@ -278,3 +278,115 @@
 --------------------- [ test][201104_153639]End ----------------------
 
 
+------------------- [ test][201106_134840]Options --------------------
+         backend_pretrain: False                         
+               batch_size: 4                             	[default: 32]
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+              cls_backend: inception                     
+                   cls_nc: 7                             
+                 cls_norm: batch                         
+                  cls_pkl: emotion_labels.pkl            
+                data_root: datasets/CKPlus               	[default: None]
+              epoch_count: 1                             
+               final_size: 299                           
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+             imgs_res_dir: imgs_res                      
+                init_gain: 0.02                          
+                init_type: xavier                        
+               lambda_cls: 1.0                           
+           lambda_resface: 0.1                           
+               load_epoch: 200                           	[default: 0]
+           load_model_dir: ckpts/CKPlus/res_cls/fold_0/201104_012643	[default: ./checkpoints]
+                load_size: 320                           
+                 log_file: losses.log                    
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1604630921                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: res_cls                       
+                n_threads: 12                            
+                     name: 201106_134840                 
+                    niter: 200                           
+              niter_decay: 100                           
+                     norm: instance                      
+             optim_policy: adam                          
+        print_losses_freq: 4                             
+                   res_lr: 1e-05                         
+             res_n_blocks: 4                             
+                 res_norm: batch                         
+          res_use_dropout: False                         
+          sample_img_freq: 5                             
+          save_epoch_freq: 200                           
+           serial_batches: False                         
+                   solver: res_cls                       
+                 test_csv: test_ids_5.csv                	[default: test_ids.csv]
+                train_csv: train_ids.csv                 
+          use_cls_dropout: False                         
+         use_data_augment: False                         
+        visdom_display_id: 1                             
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][201106_134840]End ----------------------
+
+
+------------------- [ test][201106_135254]Options --------------------
+         backend_pretrain: False                         
+               batch_size: 4                             	[default: 32]
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+              cls_backend: inception                     
+                   cls_nc: 7                             
+                 cls_norm: batch                         
+                  cls_pkl: emotion_labels.pkl            
+                data_root: datasets/CKPlus               	[default: None]
+              epoch_count: 1                             
+               final_size: 299                           
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+             imgs_res_dir: imgs_res                      
+                init_gain: 0.02                          
+                init_type: xavier                        
+               lambda_cls: 1.0                           
+           lambda_resface: 0.1                           
+               load_epoch: 200                           	[default: 0]
+           load_model_dir: ckpts/CKPlus/res_cls/fold_0/201104_012643	[default: ./checkpoints]
+                load_size: 320                           
+                 log_file: losses.log                    
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1604631176                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: res_cls                       
+                n_threads: 12                            
+                     name: 201106_135254                 
+                    niter: 200                           
+              niter_decay: 100                           
+                     norm: instance                      
+             optim_policy: adam                          
+        print_losses_freq: 4                             
+                   res_lr: 1e-05                         
+             res_n_blocks: 4                             
+                 res_norm: batch                         
+          res_use_dropout: False                         
+          sample_img_freq: 5                             
+          save_epoch_freq: 200                           
+           serial_batches: False                         
+                   solver: res_cls                       
+                 test_csv: test_ids_5.csv                	[default: test_ids.csv]
+                train_csv: train_ids.csv                 
+          use_cls_dropout: False                         
+         use_data_augment: False                         
+        visdom_display_id: 1                             
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][201106_135254]End ----------------------
+
+
