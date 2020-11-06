@@ -1,2 +1,0 @@
-autocrop <input> <input folder> <output> crop <width> 500 <Height> 500
-autocrop -i angry -o crop -w 500 -H 500
