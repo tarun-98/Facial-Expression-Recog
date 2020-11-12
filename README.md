@@ -47,7 +47,7 @@ python main.py --mode train --data_root datasets/CKPlus --train_csv train_ids_0.
     --print_losses_freq 4 --use_data_augment --visdom_env res_cls_ckp_0 --niter 100 \
     --niter_decay 100 --gpu_ids 0 --model res_cls --solver res_cls --lambda_resface 0.1 \
     --batch_size 16 --backend_pretrain \
-    --load_model_dir ckpts/CKPlus/res_baseline/fold_0/190117_165651 --load_epoch 300 \
+    --load_model_dir ckpts/CKPlus/res_baseline/fold_0/201101_084254 --load_epoch 300 \
     /
 ```
 
@@ -56,7 +56,7 @@ python main.py --mode train --data_root datasets/CKPlus --train_csv train_ids_0.
 ``` sh
 python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv \
     --gpu_ids 0 --model res_cls --solver res_cls --batch_size 4 \
-    --load_model_dir ckpts/CKPlus/res_cls/fold_0/190118_170050 --load_epoch 200 \
+    --load_model_dir ckpts/CKPlus/res_cls/fold_0/201104_012643 --load_epoch 200 \
     /
 ```
 
@@ -71,9 +71,9 @@ python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv
 
 | Fold ID   | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | Avg  |
 |-----------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|------|
-| CK+       | 0.885 | 1.000 | 0.921 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 0.98 |
-| MMI       | 0.778 | 0.731 | 0.667 | 0.744 | 0.857 | 0.855 | 0.958 | 0.889 | 1.000 | 0.795 | 0.83 |
-| AffectNet | -     | -     | -     | -     | -     | -     | -     | -     | -     | -     | 0.62 |
+| CK+_Paper results     | 0.885 | 1.000 | 0.921 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 0.98 |
+|CK+ Our results|0.603| 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 0.96 |
+
 
 
 ## Citation
