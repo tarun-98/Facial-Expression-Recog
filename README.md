@@ -60,6 +60,7 @@ python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv
 
 * The pseudo ground truth facial motion masks for dataset CK+, MMI and AffectNet are presented in `/datasets`.
 * Training and Testing datasets splits are located in `/datasets`, 10-fold cross validation is used in the project as a general approach.
+
 |Expression|Label|
 |----------|-----|
 |Anger     |1    |
