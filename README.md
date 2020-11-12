@@ -16,13 +16,6 @@ Official PyTorch Implementation of **Facial Motion Prior Networks for Facial Exp
 
 ![FMPN Model Structure](images/proposed_model.png)
 
-## Setup
-
-### Prerequisites
-
-* python >= 3.6
-* pytorch >= 0.4.1
-* visdom == 0.1.8.9
 
 ### Training
 
@@ -37,6 +30,7 @@ python main.py --mode train --data_root datasets/CKPlus --train_csv train_ids_0.
     --model res_baseline --solver resface --img_nc 1 \
     /
 ```
+- The pretrained Facial Mask Generator parameters are saved in 'ckpts/CKPlus/res_baseline/fold_0/201101_084254/'
 
 #### Jointly Train the Facial-Motion Prior Network
 
@@ -50,8 +44,10 @@ python main.py --mode train --data_root datasets/CKPlus --train_csv train_ids_0.
     --load_model_dir ckpts/CKPlus/res_baseline/fold_0/201101_084254 --load_epoch 300 \
     /
 ```
+- After running above command the trained model paramters are saved in 'ckpts/CKPlus/res_cls/fold_0/201104_012643/'
 
 ### Testing 
+- In testing phase you need to just load the pretrained model parameters from "ckpts/CKPlus/res_cls/fold_0/201104_012643" and run the pretrained model on test dataset.
 
 ``` sh
 python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv \
@@ -64,7 +60,16 @@ python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv
 
 * The pseudo ground truth facial motion masks for dataset CK+, MMI and AffectNet are presented in `/datasets`.
 * Training and Testing datasets splits are located in `/datasets`, 10-fold cross validation is used in the project as a general approach.
-
+|Expression|Label|
+|----------|-----|
+|Anger     |1    |
+|Contempt  |2    |
+|Happy     |5    |
+|Disgust   |3    |
+|Sad       |6    |
+|Surprise  |7    |
+|Fear      |4    |
+|Neutral   |-1   |
 ## Results Detail
 
 10 folds accuracy for CK+, MMI and AffectNet.
@@ -76,6 +81,8 @@ python main.py --mode test --data_root datasets/CKPlus --test_csv test_ids_0.csv
 
 
 
+## Data set Generation
+- The instructions about new data set generation can be found in 'COMP8240_Project_GroupG/DATASET_GENERATION' directory.
 ## Citation
 
 If you use this code for your research, please cite our paper <a href="https://arxiv.org/abs/1902.08788">Facial Motion Prior Networks for Facial Expression Recognition</a>:
@@ -90,6 +97,4 @@ If you use this code for your research, please cite our paper <a href="https://a
 }
 ```
 
-## Acknowledgments
 
-This work is mainly conducted when Yuedong is a research intern in Lenovo AI Lab, Beijing. For any questions regarding this project, feel free to create an issue or reach Yuedong by Email.
