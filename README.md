@@ -1,16 +1,5 @@
 # FMPN-FER
 
-<p align="left">
-	<img src="https://img.shields.io/badge/Status-Release-gold.svg?style=flat-square" alt="Status">
-	<img src="https://img.shields.io/badge/Platform-Linux-lightgrey.svg?style=flat-square" alt="Platform">
-	<img src="https://img.shields.io/badge/PyTorch Version-0.4.1-blue.svg?style=flat-square" alt="PyTorch">
-	<img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License">
-</p>
-
-[![PWC](https://img.shields.io/endpoint.svg?style=flat-square&url=https://paperswithcode.com/badge/facial-motion-prior-networks-for-facial/facial-expression-recognition-on-mmi)](https://paperswithcode.com/sota/facial-expression-recognition-on-mmi?p=facial-motion-prior-networks-for-facial)
-
-[![PWC](https://img.shields.io/endpoint.svg?style=flat-square&url=https://paperswithcode.com/badge/facial-motion-prior-networks-for-facial/facial-expression-recognition-on-ck)](https://paperswithcode.com/sota/facial-expression-recognition-on-ck?p=facial-motion-prior-networks-for-facial)
-
 
 ![FMPN Model Structure](images/proposed_model.png)
 
